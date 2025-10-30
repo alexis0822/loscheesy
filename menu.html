@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Los Cheesy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menu-container animate-up">
+        <a href="index.html" class="back-link">← Volver al Inicio</a>
+        
+        <div class="menu-header">
+            <h1>Menú</h1>
+            <div class="subtitle">LOS CHEESY</div>
+        </div>
+
+        <!-- Order System -->
+        <div class="order-system">
+            <div class="location-selector">
+                <label for="location-select">Selecciona tu local:</label>
+                <select id="location-select">
+                    <option value="">-- Elige un local --</option>
+                    <option value="hatillo">Hatillo</option>
+                    <option value="dorado">Dorado</option>
+                    <option value="aguadilla">Aguadilla</option>
+                    <option value="condado">Condado</option>
+                </select>
+            </div>
+            
+            <div class="order-grid">
+                <div class="menu-items">
+                    <!-- Section 1: Smash Burgers -->
+                    <div class="menu-section">
+                        <div class="section-number">1</div>
+                        <h2>Smash Burgers</h2>
+                        
+                        <div class="order-item" data-item="onion-smash" data-base-price="8">
+                            <div class="order-item-header">
+                                <div class="order-item-name">ONION SMASH</div>
+                                <div class="order-item-price">$<span class="price-display">8</span></div>
+                            </div>
+                            <div class="order-item-desc">Doble Carne, Doble Queso, Cebolla, Salsa Smash.</div>
+                            <div class="order-item-options">
+                                <div class="size-options">
+                                    <div class="size-option selected" data-size="doble" data-price="8">DOBLE ($8)</div>
+                                    <div class="size-option" data-size="triple" data-price="11">TRIPLE ($11)</div>
+                                </div>
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="bacon-smash" data-base-price="9">
+                            <div class="order-item-header">
+                                <div class="order-item-name">BACON SMASH</div>
+                                <div class="order-item-price">$<span class="price-display">9</span></div>
+                            </div>
+                            <div class="order-item-desc">Doble Carne, Doble Queso, Bacon, Cebolla, Salsa Smash.</div>
+                            <div class="order-item-options">
+                                <div class="size-options">
+                                    <div class="size-option selected" data-size="doble" data-price="9">DOBLE ($9)</div>
+                                    <div class="size-option" data-size="triple" data-price="12">TRIPLE ($12)</div>
+                                </div>
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="deluxe-smash" data-base-price="9">
+                            <div class="order-item-header">
+                                <div class="order-item-name">DELUXE SMASH</div>
+                                <div class="order-item-price">$<span class="price-display">9</span></div>
+                            </div>
+                            <div class="order-item-desc">Doble Carne, Doble Queso, Lechuga, Tomate, Cebolla, Salsa Smash.</div>
+                            <div class="order-item-options">
+                                <div class="size-options">
+                                    <div class="size-option selected" data-size="doble" data-price="9">DOBLE ($9)</div>
+                                    <div class="size-option" data-size="triple" data-price="12">TRIPLE ($12)</div>
+                                </div>
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Sandwiches -->
+                    <div class="menu-section">
+                        <div class="section-number">2</div>
+                        <h2>Sandwiches</h2>
+                        
+                        <div class="order-item" data-item="philly-cheesesteak" data-price="9">
+                            <div class="order-item-header">
+                                <div class="order-item-name">PHILLY CHEESESTEAK</div>
+                                <div class="order-item-price">$9</div>
+                            </div>
+                            <div class="order-item-desc">Philly Steak, 3 Quesos, Pimiento, Cebolla.</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="chopped-cheese" data-price="9">
+                            <div class="order-item-header">
+                                <div class="order-item-name">CHOPPED CHEESE</div>
+                                <div class="order-item-price">$9</div>
+                            </div>
+                            <div class="order-item-desc">Carne Smash picada, Doble Queso, Cebolla, Lechuga, Tomate, Salsa Smash</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="tripleta" data-price="12">
+                            <div class="order-item-header">
+                                <div class="order-item-name">TRIPLETA</div>
+                                <div class="order-item-price">$12</div>
+                            </div>
+                            <div class="order-item-desc">Steak, Pollo, Carne Smash, Pimiento, Cebolla, Queso Rayado, Salsa Smash</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Nachos o Papas Supreme -->
+                    <div class="menu-section">
+                        <div class="section-number">3</div>
+                        <h2>Nachos o Papas Supreme</h2>
+                        
+                        <div class="order-item" data-item="chicken-bacon-supreme" data-price="12">
+                            <div class="order-item-header">
+                                <div class="order-item-name">CHICKEN BACON</div>
+                                <div class="order-item-price">$12</div>
+                            </div>
+                            <div class="order-item-desc">Pollo, Bacon, Queso cheddar, Pico de Gallo, Salsa Smash</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="steak-bacon-supreme" data-price="12">
+                            <div class="order-item-header">
+                                <div class="order-item-name">STEAK 'N BACON</div>
+                                <div class="order-item-price">$12</div>
+                            </div>
+                            <div class="order-item-desc">Philly Steak, Bacon, Queso Cheddar, Pimiento, Cebolla, Salsa Smash</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="bacon-smash-supreme" data-price="12">
+                            <div class="order-item-header">
+                                <div class="order-item-name">BACON SMASH BURGER</div>
+                                <div class="order-item-price">$12</div>
+                            </div>
+                            <div class="order-item-desc">Carne Smash, Bacon, Queso Cheddar, Salsa Smash</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4: Quesadillas -->
+                    <div class="menu-section">
+                        <div class="section-number">4</div>
+                        <h2>Quesadillas</h2>
+                        
+                        <div class="order-item" data-item="chicken-bacon-quesadilla" data-price="10">
+                            <div class="order-item-header">
+                                <div class="order-item-name">CHICKEN BACON</div>
+                                <div class="order-item-price">$10</div>
+                            </div>
+                            <div class="order-item-desc">Pollo, Bacon, Queso Mixto - Aparte Pico de Gallo, Guacamole, Salsa Smash.</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="steak-bacon-quesadilla" data-price="10">
+                            <div class="order-item-header">
+                                <div class="order-item-name">STEAK 'N BACON</div>
+                                <div class="order-item-price">$10</div>
+                            </div>
+                            <div class="order-item-desc">Philly Steak, Bacon, Queso Mixto - Aparte Pico de Gallo.</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item" data-item="bacon-smash-quesadilla" data-price="10">
+                            <div class="order-item-header">
+                                <div class="order-item-name">BACON SMASH BURGER</div>
+                                <div class="order-item-price">$10</div>
+                            </div>
+                            <div class="order-item-desc">Carne Smash, Bacon, Queso Mixto - Aparte Pico de Gallo, Guacamole, Salsa Smash.</div>
+                            <div class="order-item-options">
+                                <button class="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Aperitivos -->
+
+                <!-- TODO: Adjust prices -->
+                <div class="menu-section">
+                    <div class="section-number">5</div>
+                    <h2>Aperitivos</h2>
+                    
+                    <div class="order-item" data-item="nachos-queso" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">NACHOS CON QUESO</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Nachos crujientes con salsa de queso cheddar.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="sorullitos" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">SORULLITOS</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Tradicionales sorullitos de maíz con queso.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="queso-frito" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">QUESO FRITO</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Delicioso queso frito, crujiente por fuera y derretido por dentro.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="mazorcas-parmesana-2X" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">MAZORCAS PARMESANA 2X</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Deliciosas mazorcas de maíz con queso parmesano.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="mozzarella-sticks" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">MOZZARELLA STICKS</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Palitos de mozzarella empanizados y fritos.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="alitas" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">ALITAS</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Alitas de pollo crujientes con salsa a elección.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="queso-fundido-con-chorizo" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">QUESO FUNDIDO CON CHORIZO</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Delicioso queso fundido con chorizo.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="surtido" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">SURTIDO</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Una selección de nuestros mejores aperitivos.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Complementos -->
+                <!-- TODO: Adjust prices -->
+                <div class="menu-section">
+                    <div class="section-number">6</div>
+                    <h2>Complementos</h2>
+                    
+                    <div class="order-item" data-item="papas" data-base-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">PAPAS</div>
+                            <div class="order-item-price">$<span class="price-display">4</span></div>
+                        </div>
+                        <div class="order-item-desc">Elige tu estilo favorito.</div>
+                        <div class="order-item-options">
+                            <div class="style-options">
+                                <div class="style-option selected" data-style="regulares" data-price="4">REGULARES ($4)</div>
+                                <div class="style-option" data-style="cheesy-bacon" data-price="6">CHEESY BACON ($6)</div>
+                                <div class="style-option" data-style="parmesanas" data-price="6">PARMESANAS ($6)</div>
+                            </div>
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="nachos-cheesy" data-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">NACHOS CHEESY</div>
+                            <div class="order-item-price">$4</div>
+                        </div>
+                        <div class="order-item-desc">Nachos con nuestra salsa especial de queso.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="sorullitos-complemento" data-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">SORULLITOS</div>
+                            <div class="order-item-price">$4</div>
+                        </div>
+                        <div class="order-item-desc">Porción de sorullitos de maíz con queso.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="mazorca-parmesana" data-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">MAZORCA PARMESANA</div>
+                            <div class="order-item-price">$4</div>
+                        </div>
+                        <div class="order-item-desc">Mazorca de maíz cubierta con queso parmesano.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="mozzarella-sticks-complemento" data-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">MOZZARELLA STICKS</div>
+                            <div class="order-item-price">$4</div>
+                        </div>
+                        <div class="order-item-desc">Palitos de queso mozzarella empanizados.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <!-- Add remaining Complementos items following the same pattern -->
+                </div>
+
+                <!-- Section 7: Postres -->
+                <div class="menu-section">
+                    <div class="section-number">7</div>
+                    <h2>Postres</h2>
+                    
+                    <div class="order-item" data-item="cheesecake" data-price="5">
+                        <div class="order-item-header">
+                            <div class="order-item-name">CHEESECAKE</div>
+                            <div class="order-item-price">$5</div>
+                        </div>
+                        <div class="order-item-desc">Delicioso cheesecake con base de galleta.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="oreo-milkshake" data-price="4">
+                        <div class="order-item-header">
+                            <div class="order-item-name">OREO MILKSHAKE</div>
+                            <div class="order-item-price">$4</div>
+                        </div>
+                        <div class="order-item-desc">Batido cremoso de Oreo.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="cheesecake-frito" data-price="6">
+                        <div class="order-item-header">
+                            <div class="order-item-name">CHEESECAKE FRITO</div>
+                            <div class="order-item-price">$6</div>
+                        </div>
+                        <div class="order-item-desc">Cheesecake frito con un toque dulce.</div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8: Bebidas -->
+                <div class="menu-section">
+                    <div class="section-number">8</div>
+                    <h2>Bebidas</h2>
+                    
+                    <div class="order-item" data-item="coca-cola" data-price="2">
+                        <div class="order-item-header">
+                            <div class="order-item-name">COCA-COLA</div>
+                            <div class="order-item-price">$2</div>
+                        </div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="sprite" data-price="2">
+                        <div class="order-item-header">
+                            <div class="order-item-name">SPRITE</div>
+                            <div class="order-item-price">$2</div>
+                        </div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="coca-cola-zero" data-price="2">
+                        <div class="order-item-header">
+                            <div class="order-item-name">COCA-COLA ZERO</div>
+                            <div class="order-item-price">$2</div>
+                        </div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="sprite-zero" data-price="2">
+                        <div class="order-item-header">
+                            <div class="order-item-name">SPRITE ZERO</div>
+                            <div class="order-item-price">$2</div>
+                        </div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+
+                    <div class="order-item" data-item="agua" data-price="1">
+                        <div class="order-item-header">
+                            <div class="order-item-name">AGUA</div>
+                            <div class="order-item-price">$1</div>
+                        </div>
+                        <div class="order-item-options">
+                            <button class="add-to-cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-section">
+                    <h2>Tu Orden</h2>
+                    <div class="cart-items" id="cart-items">
+                        <div class="empty-cart">Tu carrito está vacío</div>
+                    </div>
+                    <div class="cart-total">
+                        Total: $<span id="cart-total">0.00</span>
+                    </div>
+                    <button class="checkout-btn" id="checkout-btn" disabled>Continuar al Checkout</button>
+                </div>
+            </div>
+            
+            <div class="checkout-form" id="checkout-form">
+                <h2>Información del Pedido</h2>
+                <div class="form-group">
+                    <label for="customer-name">Nombre Completo</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-phone">Teléfono</label>
+                    <input type="tel" id="customer-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-email">Correo Electrónico</label>
+                    <input type="email" id="customer-email">
+                </div>
+                <div class="form-group">
+                    <label for="order-notes">Notas para el Pedido (opcional)</label>
+                    <textarea id="order-notes" rows="3"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button class="back-to-cart-btn" id="back-to-cart-btn">Volver al Carrito</button>
+                    <button class="submit-order-btn" id="submit-order-btn">Enviar Pedido</button>
+                </div>
+            </div>
+            
+            <div class="order-confirmation" id="order-confirmation">
+                <div class="confirmation-icon">✅</div>
+                <h2>¡Pedido Recibido!</h2>
+                <p>Tu pedido ha sido enviado al local seleccionado.</p>
+                <p>Recibirás una confirmación por teléfono pronto.</p>
+                <p>Número de pedido: <strong id="order-number">LC-0001</strong></p>
+                <button class="checkout-btn" id="new-order-btn">Hacer Otro Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            &copy; 2025 AJNLDev. Todos los derechos reservados.
+        </div>
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/loscheesypr/" target="_blank" class="footer-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/loscheesy" target="_blank" class="footer-icon" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Cheesy - Cocina Puertorriqueña Auténtica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html">
+                <img src="images/cheesy_logo.jpg" alt="Los Cheesy Logo" loading="lazy" decoding="async" />
+            </a>
+
+            <!-- mobile toggle -->
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="#about">Nuestra Historia</a></li>
+                <li><a href="#destinations">Ubicaciones</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="menu.html" class="nav-cta">Menú</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <!-- background layers for slideshow (fallback) -->
+        <div class="hero-bg hero-bg-1" aria-hidden="true"></div>
+        <div class="hero-bg hero-bg-2" aria-hidden="true"></div>
+        <div class="hero-bg hero-bg-3" aria-hidden="true"></div>
+
+        <div class="hero-content animate-up" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:40px 20px;">
+            <div class="hero-text" style="max-width:900px;">
+                <h1 class="animated-title">Los Cheesy</h1>
+                <!-- Rotating Puerto Rican tagline -->
+                <p class="rotating-text">
+                    <span>🔥 Smash Burgers</span>
+                    <span>🧀 Queso Lovers</span>
+                    <span>🇵🇷 100% Boricua</span>
+                </p>
+
+                <p class="hero-subtext">El que sabe, sabe — Sabores puertorriqueños con corazón</p>
+
+                <div class="hero-ctas"  style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+                    <a href="#about" class="cta-button">Conócenos</a>
+                    <a href="menu.html" class="menu-button"><i class="fa-solid fa-burger"></i> Ver Menú</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about" id="about">
+        <h2>Nuestra Historia</h2>
+        <div class="about-content" style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;">
+            <div style="flex:1 1 320px; min-width:280px;">
+                <h3 style="margin-top:0;">Quiénes Somos?</h3>
+                <p>
+                    Bienvenido a Los Cheesy — tradición e innovación en cada bocado. Fundado en Puerto Rico,
+                    llevamos más de una década sirviendo platos con nuestro toque especial de queso y una
+                    hospitalidad que hace que todos se sientan en casa.
+                </p>
+                <p style="margin-top:18px;">
+                    Nuestro viaje nació de una pasión simple: crear momentos memorables alrededor de la mesa.
+                    Usamos ingredientes locales y recetas familiares para ofrecer sabores auténticos que
+                    invitan a volver.
+                </p>
+                <p style="margin-top:18px;">
+                    Ven a disfrutar de la calidez isleña en cada plato, servido con orgullo por el equipo de Los Cheesy.
+                </p>
+                <div style="margin-top:22px;">
+                    <a href="menu.html" class="menu-button" style="display:inline-block;padding:10px 18px;border-radius:8px;background:#d35400;color:#fff;text-decoration:none;font-weight:600;">
+                        Ver Nuestro Menú
+                    </a>
+                    <a href="#contact" class="menu-button" style="display:inline-block;padding:10px 18px;border-radius:8px;background:transparent;border:2px solid #d35400;color:#d35400;text-decoration:none;margin-left:12px;font-weight:600;">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex:1 1 280px; min-width:260px; display:flex; flex-direction:column; gap:18px; align-items:center;">
+                <figure style="width:100%; max-width:480px; margin:0;">
+                    <img src="images/lms.png" alt="Los Cheesy Imagen 1" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.12); display:block;">
+                </figure>
+                <figure style="width:100%; max-width:480px; margin:0;">
+                    <img src="images/eqss.jpeg" alt="Los Cheesy Imagen 2" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.12); display:block;">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ubicaciones -->
+    <section class="destinations" id="destinations">
+        <h2>Nuestras Ubicaciones</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="images/hatillo.webp" alt="Hatillo" loading="lazy" decoding="async">
+                <h3>Hatillo</h3>
+                <p>Box 1592<br>Hatillo, PR 00659</p>
+                <p><strong>Lun-Dom:</strong> 11AM - 10PM</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+17877167891">(787) 716-7891</a></p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dorado.jpg" alt="Dorado" loading="lazy" decoding="async">
+                <h3>Dorado</h3>
+                <p>2-5 C. Marginal<br>Dorado, PR 00646</p>
+                <p><strong>Lun-Dom:</strong> 11AM - 10PM</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+19392452110">(939) 245-2110</a></p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/aguadilla.jpg" alt="Aguadilla" loading="lazy" decoding="async">
+                <h3>Aguadilla</h3>
+                <p>2064 Ave Dr Pedro Albizu Campos Local 101<br>Aguadilla, PR 00603</p>
+                <p><strong>Lun-Dom:</strong> 11AM - 10PM</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+17876581698">(787) 658-1698</a></p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/unnamed.webp" alt="Condado" loading="lazy" decoding="async">
+                <h3>Condado</h3>
+                <p>Magdalena Ave<br>San Juan, PR 00907</p>
+                <p><strong>Lun-Dom:</strong> 11AM - 11PM</p>
+                <p><strong>Teléfono:</strong> <a href="tel:+19394933862">(939) 493-3862</a></p>
+            </div>
+            <!-- Agrega más tarjetas de ubicación aquí si es necesario -->
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact" id="contact">
+        <h2>Contáctanos</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Sección Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            &copy; 2025 AJNLDev. Todos los derechos reservados.
+        </div>
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/loscheesypr/" target="_blank" class="footer-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/loscheesy" target="_blank" class="footer-icon" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="hero-button-animation.js"></script>
+    <!-- add nav script include before closing body -->
+    <script src="mobileNav.js" defer></script>
+</body>
+</html>
