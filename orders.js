@@ -392,8 +392,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const endpoints = {
             'hatillo': 'https://formspree.io/f/mqagdzyn',
             'dorado': 'https://formspree.io/f/meopljvw',
-            'aguadilla': 'https://formspree.io/f/YOUR_AGUADILLA_FORM_ID',
-            'condado': 'https://formspree.io/f/YOUR_CONDADO_FORM_ID'
+            'aguadilla': 'https://formspree.io/f/xyzbnveo',
+            'condado': 'https://formspree.io/f/xgvpnqag'
         };
         
         return endpoints[location] || 'https://formspree.io/f/mgvpozgz'; // Fallback to default
